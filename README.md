@@ -4,6 +4,12 @@ The official website for Lumiver Technologies
 
 ## Available Scripts
 
+First, install the project's dependencies
+
+```
+npm install
+```
+
 In the project directory, you can run:
 
 ### `npm start`
