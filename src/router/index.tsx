@@ -10,14 +10,14 @@ const Router = () => {
 
   const { i18n } = useTranslation()
 
-  const setLangDir = () => {
-    if (i18n.language) {
-      document.documentElement.dir = i18n.dir(i18n.language)
-    }
-  }
-
   useEffect(() => {
-    setLangDir()
+
+    const setLangDir = () => {
+      if (i18n.language) {
+        document.documentElement.dir = i18n.dir(i18n.language)
+      }
+    }
+    setLangDir();
   }, [i18n, i18n.language])
 
   return (
